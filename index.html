@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mangcoding Website</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Raleway:ital@0;1&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="config.js"></script>
+        <style type="text/tailwindcss">
+            @layer utilities {
+              nav a {
+                @apply text-nav hover:text-black font-raleway;
+              }
+    
+              nav a.active {
+                @apply text-black;
+              }
+    
+              .button-primary {
+                @apply bg-primary py-[12px] px-[30px] text-white rounded-full hover:bg-secondary;
+              }
+
+              .button-download {
+                @apply bg-white py-[12px] px-[30px] text-cyan-500 border-2 border-solid rounded-full hover:bg-primary hover:text-white;
+              }
+    
+              .text-gradient {
+                background: linear-gradient(90.01deg, #E18700 35.24%, #FF32AD 66.21%, #0EC5D7 97.18%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+              }
+            }
+        </style>
+    </head>
+<body>
+    <header class="bg-headern relative container mx-auto">
+        <section class="">
+            <section id="topbar" class="flex justify-between gap-10 items-center pb-10">
+                <div id="left-side" class="flex gap-10 items-center">
+                    <img src="./Logoduiten.png" alt="">
+                    <nav>
+                        <ul class="flex gap-5 items-center">
+                            <li><a href="#" class="active">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Download</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="right-side" class="flex items-center gap-10">
+                    <a href="" class="underline text-2xl">Login</a>
+                    <button>
+                        <img src="./Picture9.png" alt="">
+                    </button>
+                    <a href="#get-started" class="button-primary">Get Started</a>
+                </div>
+            </section>
+        </section>
+        <section id="hero" class="flex flex-col gap-5">
+            <div class="max-w-[700px] mx-left mt-[100px] px-20">
+                <p class="text-sm text-amber-500 py-10">Dashboard Admin Manager </p>
+                <h1 class="text-2xl lg:text-4xl xl:text-5xl font-nunito font-bold"><span class="text-cyan-500">Managing Finances</span> <br>  Well will make you <br> Live rich</h1>
+                <p class="py-10">
+                    Seduten will help you to manage your finances, starting from your monthly expenses and income, ensuring that your account and money are safe with our professional system.
+                </p>
+                <div class="action py-10 flex items-center gap-10">
+                    <a href="#get-started" class="button-primary">Get Started</a>
+                    <a href="#" class="flex items-center gap-5 button-download">Download <img src="./download.png" alt=""></a>
+                </div>
+            </div>
+            
+            <img src="./Picture7.png" alt="" class="mx-auto">
+        </section>
+        <section class="bg-amber-500">
+            <div class="flex px-20 py-10 gap-10">
+                <div class="text-white text-[14px] text-center">
+                    <p class="text-[32px]">500+</p>
+                    <p>Partner <br> Word Wide</p>
+                </div>
+                <div class="text-white text-[14px] text-center">
+                    <p class="text-[32px]">100k+</p>
+                    <p>User <br> Word Wide</p>
+                </div>
+                <div class="text-white text-[14px] text-center">
+                    <p class="text-[32px]">3,23m+</p>
+                    <p>Download <br> Total</p>
+                </div>
+            </div>
+        </section>
+        <section class="px-10 py-5">
+            <p>Partner :</p>
+            <div class="grid grid-cols-3 gap-10 w-[700px] items-center">
+                <img src="./MS.png" alt="" class="w-[157px]">
+                <img src="./google.png" alt="" class="w-[157px]">
+                <img src="./Tesla.png" alt="" class="w-[157px]">
+                <img src="./Payoneer.png" alt="" class="w-[157px]">
+                <img src="./Paypal.png" alt="" class="w-[157px]">
+            </div>
+        </section>
+        <img src="./Amang amang.png" alt="" class="w-[747px] absolute right-0 top-48">
+        <img src="./das.png" alt="" class="w-[800px] absolute right-0 top-[700px]">
+    </header>
+</body>
+</html>
